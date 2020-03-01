@@ -1,0 +1,121 @@
+body {
+  margin: 0;
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
+    sans-serif;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.entryPoint {
+  background-color: #06162e;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.CurrencyItem {
+  background-color: #0d2f52;
+  width: 100%;
+  display: flex;
+  padding: 20px;
+  cursor: pointer;
+}
+
+.CurrencyItem .image {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.CurrencyItem .image h5 {
+  color: #8ccb51;
+  font-size: 14px;
+  margin-top: 10px;
+}
+
+.CurrencyItem .info {
+  padding-left: 30px;
+}
+
+.CurrencyItem .info div {
+  display: flex;
+}
+
+.CurrencyItem .info strong, p, .selectedCoin {
+  color: #7dacf3;
+}
+
+.CurrencyItem .info strong {
+  text-transform: uppercase;
+}
+
+.CurrencyItem .info p {
+  margin-left: 10px;
+}
+
+.selectedCoin {
+  text-align: center;
+  margin: 30px 0;
+}
+
+.insertValue {
+  text-align: center;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.insertValue label {
+  color: #86c551;
+  font-size: 20px;
+}
+
+.insertValue label input {
+  margin-left: 20px;
+  background-color: #06162e;
+  border: 1px solid #082c4b;
+  color: #5bd2ff;
+  padding-left: 20px;
+  -webkit-appearance: none;
+  -moz-appearance:textfield;
+  width: 440px;
+  height: 35px;
+}
+
+.insertValue .radioInputs {
+  margin-top: 25px;
+  display: flex;
+  justify-content: space-between;
+  width: 200px;
+}
+
+.insertValue .radioInputs div input {
+  display: none;
+}
+
+.insertValue .radioInputs div label {
+  text-transform: uppercase;
+  background-color: #0d2f52;
+  font-size: 14px;
+  width: 45px;
+  height: 35px;
+  margin: 0;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: all .2s ease-out;
+  font-weight: 700;
+}
+
+.insertValue .radioInputs div label:hover, .insertValue .radioInputs div.active label {
+  background-color: #86c551;
+  color: #0d2f52;
+}
+
+.result {
+  text-align: center;
+  margin-top: 50px;
+  color: #86c551;
+}
