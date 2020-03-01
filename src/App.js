@@ -1,6 +1,5 @@
 import React, {useState, useEffect} from 'react';
 import {Col, Container, Row, Spinner} from "react-bootstrap";
-// import dataExchange from "./dataExchange";
 import Currency from "./Currency";
 import {useDispatch, useSelector} from "react-redux";
 import {getData} from "./store/actions";
