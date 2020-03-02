@@ -23,15 +23,15 @@ export function createCorrectArray(data) {
             currencyValues: [
                 {
                     currency: 'usd',
-                    value: data[item]['USD']
+                    value: (data[item]['USD']).toFixed(2)
                 },
                 {
                     currency: 'uah',
-                    value: (data[item]['USD'] * 25).toFixed(2)
+                    value: (data[item]['UAH']).toFixed(2)
                 },
                 {
                     currency: 'rub',
-                    value: (data[item]['USD'] * 80).toFixed(2)
+                    value: (data[item]['RUB']).toFixed(2)
                 },
             ]
         }

@@ -3,7 +3,7 @@ import {takeEvery, put, call} from "@redux-saga/core/effects";
 import axios from 'axios'
 
 function getData() {
-    return axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP&tsyms=USD,EUR')
+    return axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,XRP&tsyms=USD,UAH,RUB')
 }
 
 function* workerLoadData() {

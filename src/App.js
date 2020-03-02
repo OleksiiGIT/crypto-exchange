@@ -7,7 +7,7 @@ import {getData} from "./store/actions";
 function App() {
     const dispatch = useDispatch()
     const dataExchange = useSelector(state => state.data);
-    useEffect(() => dispatch(getData()), [])
+    useEffect(() => {dispatch(getData())}, [])
 
     const [selectedCoin, setSelectedCoin] = useState({})
 
@@ -27,7 +27,7 @@ function App() {
                 return item.currency === activeRadio.split('_')[0]
             })
 
-            setResult(`${number}${selectedCoin.name} will be ${pos.value * number} in ${pos.currency.toUpperCase()}`)
+            setResult(`${number}${selectedCoin.name} will be ${(pos.value * number).toFixed(2)} in ${pos.currency.toUpperCase()}`)
         } else {
             setResult('Input correct value')
         }
